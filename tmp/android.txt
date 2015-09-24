@@ -45,8 +45,6 @@ Buildfile: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\build.xml
 [gettarget] API level:        19
      [echo] ----------
      [echo] Creating output directories if needed...
-    [mkdir] Created dir: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\bin\rsObj
-    [mkdir] Created dir: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\bin\rsLibs
      [echo] ----------
      [echo] Resolving Dependencies for animecardbattle-0.03...
 [dependency] Library dependencies:
@@ -85,8 +83,6 @@ nodeps:
 [gettarget] API level:        19
      [echo] ----------
      [echo] Creating output directories if needed...
-    [mkdir] Created dir: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\android-sdk-r23\extras\google\play_licensing\library\bin\rsObj
-    [mkdir] Created dir: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\android-sdk-r23\extras\google\play_licensing\library\bin\rsLibs
      [echo] ----------
      [echo] Resolving Dependencies for library...
 [dependency] Library dependencies:
@@ -177,8 +173,6 @@ nodeps:
 [gettarget] API level:        19
      [echo] ----------
      [echo] Creating output directories if needed...
-    [mkdir] Created dir: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\android-sdk-r23\extras\google\play_apk_expansion\downloader_library\bin\rsObj
-    [mkdir] Created dir: C:\Program Files (x86)\renpy-6.99.5-sdk\rapt\android-sdk-r23\extras\google\play_apk_expansion\downloader_library\bin\rsLibs
      [echo] ----------
      [echo] Resolving Dependencies for downloader_library...
 [dependency] Library dependencies:
@@ -331,7 +325,7 @@ release:
 release:
 
 BUILD SUCCESSFUL
-Total time: 19 seconds
+Total time: 15 seconds
 
 
 

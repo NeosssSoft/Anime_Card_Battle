@@ -17,8 +17,8 @@ init -1 python hide:
 
     ## Control de la anchura y altura de la pantalla.
 
-    config.screen_width = 800
-    config.screen_height = 600
+    config.screen_width = 1280
+    config.screen_height = 720
 
     ## Título de la ventana, cuando Ren'Py se ejecuta en
     ## modo ventana.

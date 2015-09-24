@@ -1,0 +1,6 @@
+
+Copying prototype project...
+
+Updating project with new name...
+
+Created the Xcode project.

@@ -6,6 +6,7 @@ game/androidinput.rpyc matches ** ([u'all']).
 game/cache/ matches ** ([u'all']).
 game/cache/bytecode.rpyb matches ** ([u'all']).
 game/cache/im-0899d38307539b4bed4170261d049e7e-4900000a.png matches ** ([u'all']).
+game/cache/im-0899d38307539b4bed4170261d049e7e-5bb5fd43.png matches ** ([u'all']).
 game/cache/im-3cccfb73679bacbd9ca8074d43f758de-6708be68.png matches ** ([u'all']).
 game/cache/im-4576ba56b37bdef7f88d8f6f7abdb73c-6708be68.png matches ** ([u'all']).
 game/cache/im-4a4a3d0a817660e0984392fbc93ae2dd-6708be68.png matches ** ([u'all']).
@@ -36,10 +37,12 @@ game/images/cartas/asuna_card.png matches ** ([u'all']).
 game/images/cartas/yami.png matches ** ([u'all']).
 game/images/cartas/yami_card.png matches ** ([u'all']).
 game/images/fondos/ matches ** ([u'all']).
-game/images/fondos/forest.jpg matches ** ([u'all']).
+game/images/fondos/forest.png matches ** ([u'all']).
 game/images/fondos/hell.jpg matches ** ([u'all']).
 game/images/fondos/tipos.png matches ** ([u'all']).
 game/images/fondos/vs.png matches ** ([u'all']).
+game/images/MainMenu.png matches ** ([u'all']).
+game/images/MainMenuH.png matches ** ([u'all']).
 game/images/menu/ matches ** ([u'all']).
 game/images/personaje/ matches ** ([u'all']).
 game/images/personaje/pj1.png matches ** ([u'all']).
@@ -47,6 +50,7 @@ game/menu1.png matches ** ([u'all']).
 game/options.rpy matches ** ([u'all']).
 game/options.rpy.bak matches **.bak (None).
 game/options.rpyc matches ** ([u'all']).
+game/sakura.png matches ** ([u'all']).
 game/saves/ matches game/saves/ (None).
 game/screens.rpy matches ** ([u'all']).
 game/screens.rpy.bak matches **.bak (None).
@@ -861,6 +865,8 @@ proyectos/ doesn't match anything.
 proyectos/ matches None (None).
 rapt/ doesn't match anything.
 rapt/ matches None (None).
+renios/ doesn't match anything.
+renios/ matches None (None).
 renpy/ matches renpy/ ([u'all']).
 renpy/add_from.py matches renpy/** ([u'renpy']).
 renpy/add_from.pyo matches renpy/** ([u'renpy']).

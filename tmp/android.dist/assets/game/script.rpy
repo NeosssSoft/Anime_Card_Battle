@@ -5,7 +5,7 @@
 # - Declara imágenes bajo esta línea, usando 'image' como
 #   en el ejemplo.
 # Escenarios
-image bosque = "images/fondos/forest.jpg"
+image bosque = "images/fondos/forest.png"
 image hell ="images/fondos/hell.jpg"
 image tipos ="images/fondos/tipos.png"
 image vs = "images/fondos/vs.png"
@@ -79,14 +79,28 @@ label fight(ename, elevel, ehp, pname="[j]", plevel=1, php=15):
     return
     
 init:
-    image animation = Animation("sakura.png", 0.25)
-
+    image blossoms = SnowBlossom(Animation("sakura.png", 0.15,))
 
 
 # The game starts here.
 # - El juego comienza aquí.
 
 label start:
+    
+    #stats Asuna
+    $ puntos_fuerzaA = 0
+    $ puntos_defensaA = 0
+    $ puntos_fuerza_espejoA = 0
+    $ puntos_defensa_espejoA = 0
+    $ tipoA = "viento"
+    
+    #stats Yami
+    $ puntos_fuerzaY = 0
+    $ puntos_defensaY = 0
+    $ puntos_fuerza_espejoY = 0
+    $ puntos_defensa_espejoY = 0
+    $ tipoY = "tierra"
+    
     
     #Cartas
     $ Asuna = 0
@@ -95,6 +109,7 @@ label start:
     $ renpy.music.play("sound/fondo/forest.mp3")
     show bosque
     show guia
+    show blossoms
     g "Bienvenid@ a Anime Card Battle yo sere su Guia!"
 
     g "Pero antes de que comencemos me gustaria hacerle una serie de"
@@ -194,81 +209,6 @@ label combate:
     show vs
     g "Que de comienzo a la batalla!!"
     hide vs
-    
-    if Yami == 1:
-        jump yamibattle
-        
-    else:
-        jump asunabattle
-        
-
-label yamibattle:
-    python:
-        charmax_HP = 1000
-        char_HP = 1000
-        
-        guiamax_HP = 2000
-        guia_HP = 2000
-        
-        while True:
-            stats_frame("[g]", 4, tiger_HP, tigermax_HP, xalign=.98, yalign=0.0)
-            stats_frame("[j]", 1, 86, 86, xalign=0.0, yalign=0.0)
-            renpy.pause(0.05)
-            if tiger_HP <= 0:
-                break
-    "Tiger" "Gao gao! You're strong!"
-
-
-
-label yamibattle2:
-    show yamib at left
-    show asunab at right
-    g "0" 
-    g "1"
-    g "2"
-    jump battle
-    
-    
-    
-
-    
-label asunabattle:
-    python:
-        charmax_HP = 1000
-        char_HP = 1000
-        
-        tigermax_HP = 2000
-        tiger_HP = 2000
-        
-        while True:
-            stats_frame("[g]", 4, tiger_HP, tigermax_HP, xalign=.98, yalign=0.0)
-            stats_frame("[j]", 1, 86, 86, xalign=0.0, yalign=0.0)
-            renpy.pause(0.05)
-            if tiger_HP <= 0:
-                break
-    "Tiger" "Gao gao! You're strong!"
-        
-label asunabattle2:
-    python:
-        charmax_HP = 1000
-        char_HP = 1000
-        
-        tigermax_HP = 2000
-        tiger_HP = 2000
-        
-        while True:
-            stats_frame("[g]", 4, tiger_HP, tigermax_HP, xalign=.98, yalign=0.0)
-            stats_frame("[j]", 1, 86, 86, xalign=0.0, yalign=0.0)
-            renpy.pause(0.05)
-            if tiger_HP <= 0:
-                break
-    "Tiger" "Gao gao! You're strong!"
-
-    
-
-            
-    
-
-            
+    "Has llegado al final de la demostracion, seras de vuelto automaticamente al menu"   
 
     return

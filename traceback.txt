@@ -1,30 +1,76 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 104, in script
-    " Has seleccionado [his_name] ."
-KeyError: u'his_name'
+While loading <'Image' 'images/fondos/forest.jpg'>:
+  File "game/script.rpy", line 113, in script
+    g "Bienvenid@ a Anime Card Battle yo sere su Guia!"
+IOError: Couldn't find file 'images/fondos/forest.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 104, in script
-    " Has seleccionado [his_name] ."
+  File "game/script.rpy", line 113, in script
+    g "Bienvenid@ a Anime Card Battle yo sere su Guia!"
   File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\ast.py", line 594, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\exports.py", line 1032, in say
     who(what, interact=interact)
-  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\character.py", line 817, in __call__
-    what = what_pattern.replace("[what]", sub(what, translate=translate))
-  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\character.py", line 799, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\substitutions.py", line 229, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 543, in vformat
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 565, in _vformat
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 626, in get_field
-  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in get_value
-KeyError: u'his_name'
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\character.py", line 688, in do_display
+    **display_args)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\character.py", line 491, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\core.py", line 2346, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\core.py", line 2683, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\core.py", line 1785, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 394, in renpy.display.render.render_screen (gen\renpy.display.render.c:6190)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1904)
+    cr = render(child, widtho, heighto, st - self.child_st_base, at)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\image.py", line 218, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\image.py", line 90, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\im.py", line 478, in render
+    im = cache.get(self)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\im.py", line 200, in get
+    surf = image.load()
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\display\im.py", line 529, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Program Files (x86)\renpy-6.99.5-sdk\renpy\loader.py", line 517, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'images/fondos/forest.jpg'.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.6.739

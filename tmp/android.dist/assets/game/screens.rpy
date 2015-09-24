@@ -184,19 +184,16 @@ screen main_menu():
         image "menu1.png"
         style "mm_root"
 
-    #Botones del menú principal.
-    frame:
-        style_group "mm"
-        xalign .98
-        yalign .98
 
-        has vbox
-
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit(confirm=False)
+    imagemap:
+        ground "images/MainMenu.png"
+        hover "images/MainMenuH.png"
+        
+        hotspot (435, 148, 369, 284) action Start()
+        hotspot (107, 412, 264, 260) action ShowMenu("load")
+        hotspot (632, 425, 238, 245) action Help("extras")
+        hotspot (369, 425, 264, 234) action ShowMenu("preferences")
+        hotspot (870, 424, 245, 235) action Quit(confirm=False)
 
 init -2:
 
