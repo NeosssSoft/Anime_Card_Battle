@@ -120,16 +120,11 @@ label start:
     
     g "Encantada [j] sama"
     g "Permitame que le muestre ahora su centro de operaciones"
-    # Show an imagemap.
-    window hide None
-    call screen map1
-    window show None
-    if _return == "torre":
-        g "Has eleguido el Reino Demoniaco"
-        g "Suena divertido"
-        hide guia
-        $ renpy.music.stop
-        jump reino
+    hide guia
+    show mapamundi
+    show guia at right
+    g "gg"
+    g "gg2"
         
 label reino:
     $ renpy.music.play("sound/fondo/hell.mp3")

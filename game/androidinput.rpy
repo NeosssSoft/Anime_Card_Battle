@@ -14,13 +14,13 @@ init python:
     caps_lock = False
    
 style inputter_text:
-    size 30
+    size 500
    
 style inputter_button_text:
-    size 30
+    size 130
    
 style inputter_keys:
-    size 40   
+    size 120   
 
 # Screen that Ren'Py will use for input if we are using a touch screen
 screen input(prompt):
@@ -58,7 +58,7 @@ screen input(prompt):
                     textbutton "Mayusculas (Off)" action SetScreenVariable("caps_lock", False)
             text ""
             vbox:
-                xalign 0.5
+                xalign 0.5 
                 for text_row in text_list:
                     hbox:
                         xalign 0.5

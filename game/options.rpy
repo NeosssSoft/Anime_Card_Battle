@@ -109,7 +109,7 @@ init -1 python hide:
     ## El 'relleno' ('padding') es el margen interior a la ventana,
     ## en el cual el fondo sí se dibuja, pero no el texto.
 
-    style.window.left_padding = 75
+    style.window.left_padding = 92
     style.window.right_padding = 6
     style.window.top_padding = 6
     style.window.bottom_padding = 6
