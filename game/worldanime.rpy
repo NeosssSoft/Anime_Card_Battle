@@ -362,6 +362,6 @@ image mapamundi:
     0.1
     "images/iconos/mapamundi/frame_179_delay-0.1s.gif"
     0.1
-    "images/iconos/mapamundi/frame_180_delay-s"
+    "images/iconos/mapamundi/frame_180_delay-s.gif"
     0.1
     repeat
