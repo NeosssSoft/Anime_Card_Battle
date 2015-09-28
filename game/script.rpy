@@ -121,7 +121,8 @@ label start:
     g "Encantada [j] sama"
     g "Permitame que le muestre ahora su centro de operaciones"
     hide guia
-    show mapamundi
+    show asunab:
+        xalign 0.5 yalign 0.5
     show guia at right
     g "gg"
     g "gg2"
